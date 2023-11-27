@@ -7,7 +7,61 @@
   <link rel="stylesheet" href="src/styles/css/styles.css">
 </head>
 <body>
-
+  <nav class="menu">
+    <header>
+      <div class="foto-perfil">
+        <img src="src/images/foto-perfil.jpg" alt="Foto de perfil">
+      </div>
+      <div class="info-usuarios">
+        <p class="nome-usuario">Lucas Silva</p>
+        <p class="email-usuario">lucas@gmail.com</p>
+      </div>
+    </header>
+    <ul>
+      <li class="item-menu">
+        <div>
+          <img class="item-icone" src="src/images/contatos.svg" alt="Contatos">
+          <h3 class="item-titulo">Contatos</h3>
+        </div>
+        <span class="item-quantidade">10</span>
+      </li>
+      <li class="item-menu">
+        <div>
+          <div>
+            <img class="item-icone" src="src/images/grupos.svg" alt="Grupos">
+            <h3 class="item-titulo">Grupos</h3>
+            <img class="item-icone" src="src/images/seta-cima.svg" alt="Seta">
+          </div>
+          <span class="item-quantidade">10</span>
+        </div>
+        <ul class="lista-grupos">
+          <li>
+            <h4>Contatos de emergência</h4>
+          </li>
+          <li>
+            <h4>Família</h4>
+          </li>
+          <li>
+            <h4>Amigos</h4>
+          </li>
+          <li>
+            <div>
+              <img class="grupos-icone" src="src/images/adicionar.svg" alt="Adicionar grupo">
+              <h4>Adicionar grupo</h4>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="item-menu">
+        <div>
+          <img class="item-icone" src="src/images/lixeira.svg" alt="Lixeira">
+          <h3>Lixeira</h3>
+          <span class="item-quantidade">10</span>
+        </div>
+      </li>
+    </ul>
+    <div><img src="src/images/lua.svg" alt="Mudar tema"></div>
+  </nav>
   <script src="dist/main.js"></script>
 </body>
 </html>
