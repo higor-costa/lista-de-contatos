@@ -1,0 +1,142 @@
+@import 'geral';
+
+.menu {
+  background-color: $secundaria-Tclaro;
+  width: 16.3rem;
+  height: 36rem;
+  color: $primaria-Tclaro;
+  border-radius: 8px;
+  position: fixed;
+
+  // Cabeçalho do menu
+  header {
+    border-bottom: 1px solid $primaria-Tclaro;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 15px;
+  }
+
+  // Icone para alterar tema da página
+  .mudar-tema {
+    position: relative;
+    width: 85%;
+    margin: auto;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background-color: $primaria-Tclaro;
+      top: 50%;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid;
+      padding: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+
+// Cabeçalho: informações usuário
+.menu header {
+  img {
+    border-radius: 50%;
+  }
+
+  .nome-usuario {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .email-usuario {
+    font-weight: 100;
+    font-size: 0.75rem;
+  }
+}
+
+// Lista de opções do menu
+.menu ul {
+  .item-menu, 
+  .item-menu > div, 
+  .item-menu:nth-child(2) div {
+    display: flex;
+    align-items: center;
+  }
+
+  .item-menu {
+    justify-content: space-between;
+    padding: 10px 15px;
+
+    &:hover {
+      background: $azul-fundo-Tclaro;
+    }
+
+    div {
+      gap: 5px;
+    }
+
+    .item-titulo {
+      font-weight: 400;
+      font-size: 0.775rem;
+      cursor: pointer;
+    }
+
+    .item-quantidade {
+      font-weight: 100;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+// Item Grupos
+.menu .item-menu:nth-child(2) {
+  flex-direction: column;
+  align-items: initial;
+
+  > div {
+    justify-content: space-between;
+  }
+
+  .seta {
+    cursor: pointer;
+  }
+
+  // subitens do item Grupos
+  .lista-grupos {
+    padding: 10px 25px;
+
+    h4 {
+      font-weight: 100;
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: inline-block;
+      transition: font-weight .5s;
+
+      &:hover {
+        font-weight: 400;
+      }
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    li:last-child > div {
+      margin-left: -1.4rem;
+    }
+  }
+}
