@@ -5,3 +5,35 @@
   height: 100%;
   margin-left: 281px;
 }
+
+.container-pesquisar {
+  position: relative;
+  width: 25rem;
+  margin: 0 auto;
+
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: .75rem;
+    border-radius: 50px;
+    border: none;
+    background: $secundaria-Tclaro;
+    color: $primaria-Tclaro;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.706);
+      font-size: .75rem;
+      font-weight: 100;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
