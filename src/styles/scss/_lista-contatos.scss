@@ -1,0 +1,73 @@
+.contatos-descricoes {
+  @include flex-container(center, space-evenly);
+  margin: 10px 0;
+  color: $secundaria-Tclaro;
+  font-size: .875rem;
+  text-align: center;
+  width: 97%;
+
+  h4 {
+    width: 9.5rem;
+  }
+}
+
+.lista {
+  position: relative;
+  max-height: 400px;
+  padding: 2px 2px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: $secundaria-Tclaro #f1f1f1;
+}
+
+.contato, 
+.contato > .info-basicas {
+  @include flex-container(center, space-evenly);
+}
+
+.contato {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.30);
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: .75rem;
+  text-align: center;
+  width: 99%;
+  transition: outline .5s;
+
+  &:hover {
+    outline: 1px solid $secundaria-Tclaro;
+  }
+
+  .info-basicas {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  div, 
+  > p {
+    width: 9.5rem;
+  } 
+
+  img {
+    width: 2rem;
+  }
+
+  #checkbox,
+  svg.opcoes-contato {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  #checkbox {
+    left: 1rem;
+  }
+
+  svg.opcoes-contato {
+    right: 1rem;
+  }
+}
