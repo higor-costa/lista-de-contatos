@@ -20,6 +20,60 @@
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: $secundaria-Tclaro #f1f1f1;
+
+  .botoes-opcoes {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    @include flex-container;
+    flex-direction: column;
+    background: $secundaria-Tclaro;
+    border-radius: 4px;
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+    right: 1.5rem;
+    transition: width .2s, height .2s, opacity .5s;
+
+    button {
+      display: none;
+    }
+  
+    .editar {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      padding: 10px 0 5px 13px;
+    }
+  
+    .excluir {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      padding: 5px 0 10px 10px;
+    }
+  }
+
+  .botoes-opcoes.ativo {
+    width: 6rem;
+    height: 63px;
+    opacity: 1;
+
+    button {
+      width: 100%;
+      @include flex-container(center, normal);
+      gap: 5px;
+      color: $primaria-Tclaro;
+      text-align: start;
+      border: none;
+      background: transparent;
+      transition: .5s;
+      font-size: .75rem;
+      cursor: pointer;
+  
+      &:hover {
+        background: $azul-fundo-Tclaro;
+      }
+    }
+  }
 }
 
 .contato, 
