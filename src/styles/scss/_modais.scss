@@ -18,3 +18,43 @@
     background: transparent;
   }
 }
+
+.exclusao-permanente {
+  background: #2C4B7B;
+  color: #fff;
+  width: max-content;
+  @include flex-container;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: .875rem;
+  padding: 20px;
+  position: absolute;
+  border-radius: 8px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .botoes {
+    @include flex-container;
+    gap: 10px;
+
+    button {
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.70rem;
+      cursor: pointer;
+    }
+
+    .confirmar {
+      background: $primaria-Tclaro;
+      color: $secundaria-Tclaro;
+    }
+
+    .negar {
+      background: transparent;
+      color: $primaria-Tclaro;
+      outline: 1px solid $primaria-Tclaro;
+    }
+  }
+}
