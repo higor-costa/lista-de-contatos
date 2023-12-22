@@ -21,6 +21,10 @@
 }
 
 .exclusao-permanente {
+  display: none;
+}
+
+.exclusao-permanente.ativo {
   background: #2C4B7B;
   color: #fff;
   width: max-content;
