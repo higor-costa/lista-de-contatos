@@ -63,3 +63,98 @@
     }
   }
 }
+
+form {
+  display: none;
+}
+
+form.ativo {
+  @include flex-container;
+  flex-direction: column;
+  gap: 15px;
+  width: 30rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .foto-perfil {
+    background: transparent;
+    width: 4rem;
+    height: 4rem;
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+
+  .conteiner-input {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .conteiner-input, input, select {
+    width: 100%;
+  }
+
+  .conteiner-input {
+    background: $secundaria-Tclaro;
+    border-radius: 8px;
+  }
+
+  input, select {
+    background: transparent;
+    border-radius: 8px;
+    color: $primaria-Tclaro;
+    padding: 10px 0 10px 40px;
+    border: none;
+    font-size: .75rem;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.706);
+      font-size: .75rem;
+    }
+  }
+
+  select {
+    cursor: pointer;
+    padding-left: 36px;
+    color: $primaria-Tclaro;
+
+    option {
+      background: $azul-fundo-Tclaro;
+      cursor: pointer;
+    }
+  }
+
+  .botoes {
+    text-align: center;
+    margin-top: 20px;
+
+    button {
+      border: none;
+      background: transparent;
+      color: $primaria-Tclaro;
+      padding: 12px 50px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .adicionar {
+      background: $azul-fundo-Tclaro;
+      margin-right: 15px;
+    }
+
+    .cancelar {
+      outline: 1px solid $primaria-Tclaro;
+    }
+  }
+}
