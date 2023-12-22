@@ -5,7 +5,8 @@
 .modais.ativo {
   display: initial;
   position: absolute;
-  background: #0000004d;
+  background: $modal-Tclaro;
+  backdrop-filter: blur(3px);
   width: 100%;
   height: 100%;
   z-index: 100;
