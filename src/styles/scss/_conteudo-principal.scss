@@ -1,4 +1,5 @@
 .container-conteudo {
+  position: relative;
   width: calc(100% - 300px);
   height: 100%;
   margin-left: 281px;
@@ -167,5 +168,37 @@
         stroke: $primaria-Tclaro;
       }
     }
+  }
+}
+
+.botoes-lixeira {
+  display: none;
+}
+
+.botoes-lixeira.ativo {
+  @include flex-container;
+  gap: 15px;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translateX(-50%);
+
+  button {
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    width: 14rem;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  .restaurar {
+    background: $secundaria-Tclaro;
+    color: $primaria-Tclaro;
+  }
+
+  .excluir {
+    outline: 1px solid $secundaria-Tclaro;
   }
 }
