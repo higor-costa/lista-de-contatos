@@ -114,6 +114,11 @@
 
   // subitens do item Grupos
   .lista-grupos {
+    display: none;
+  }
+
+  .lista-grupos.ativo {
+    display: block;
     padding: 10px 25px;
 
     h4 {
