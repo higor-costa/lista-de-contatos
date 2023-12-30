@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Lista de contatos desenvolvida com HTML, JavaScript e SCSS",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
