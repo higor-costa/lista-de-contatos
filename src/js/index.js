@@ -1,1 +1,1 @@
-console.log('Olá, mundo...')
+import menu from './modules/menu.js';
