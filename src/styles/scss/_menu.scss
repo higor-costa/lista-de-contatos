@@ -108,8 +108,14 @@
     justify-content: space-between;
   }
 
-  .seta {
+  .seta-grupos {
+    transition: transform .2s ease-in-out;
+    transform: rotate(360deg);
     cursor: pointer;
+
+    &.ativo {
+      transform: rotate(180deg);
+    }
   }
 
   // subitens do item Grupos
