@@ -84,3 +84,24 @@ const controles = {
   }
 
 }
+
+const lista = {
+  criaItem(item) {
+    const div = document.createElement('div');
+    div.classList.add('item');
+    div.innerHTML = item;
+
+    html.get('.lista').appendChild(div);
+  },
+  atualiza() {
+    html.get('.lista').innerHTML = '';
+
+    let pagina = estado.pagina - 1;
+    let inicio = pagina * porPagina;
+    let fim = inicio + porPagina;
+
+    const itensPaginados = dados.slice(inicio, fim); 
+
+    itensPaginados.forEach(lista.criaItem);
+  }
+}
