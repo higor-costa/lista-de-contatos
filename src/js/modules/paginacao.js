@@ -33,3 +33,14 @@ const html = {
     return document.querySelector(elemento);
   }
 }
+
+const controles = {
+  paginaSeguinte() {
+    estado.pagina++;
+
+    const ultimaPagina = estado.pagina > estado.totalPaginas;
+    if(ultimaPagina) {
+      estado.pagina--;
+    }
+  }
+}
