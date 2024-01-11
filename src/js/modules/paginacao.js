@@ -19,3 +19,11 @@ const dados = Array.from({ length: 100 })
           </svg>
         </li>`;
 });
+
+let porPagina = 20;
+const estado = {
+  pagina: 1,
+  porPagina,
+  totalPaginas: Math.ceil(dados.length / porPagina),
+  maxBotoesVisiveis: 5
+}
