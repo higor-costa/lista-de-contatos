@@ -60,5 +60,27 @@ const controles = {
     if (pagina > estado.totalPaginas) {
       estado.pagina = estado.totalPaginas;
     }
+  },
+  criaEventos() {
+    html.get('.primeiro').addEventListener('click', () => {
+      controles.irParaPagina(1);
+      atualiza();
+    })
+
+    html.get('.ultimo').addEventListener('click', () => {
+      controles.irParaPagina(estado.totalPaginas);
+      atualiza();
+    })
+
+    html.get('.anterior').addEventListener('click', () => {
+      controles.paginaAnterior();
+      atualiza();
+    })
+
+    html.get('.proximo').addEventListener('click', () => {
+      controles.paginaSeguinte();
+      atualiza();
+    })
   }
+
 }
