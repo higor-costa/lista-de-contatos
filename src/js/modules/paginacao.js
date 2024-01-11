@@ -158,3 +158,16 @@ const botoes = {
 function scrollPosicaoInicial() {
   html.get('.lista').scrollTop = 0;
 }
+
+function atualiza() {
+  lista.atualiza();
+  botoes.atualiza();
+  scrollPosicaoInicial()
+} 
+
+function iniciaFuncoes() {
+  atualiza();
+  controles.criaEventos();
+}
+
+iniciaFuncoes();
