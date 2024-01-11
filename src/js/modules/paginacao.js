@@ -105,3 +105,27 @@ const lista = {
     itensPaginados.forEach(lista.criaItem);
   }
 }
+
+const botoes = {
+  calculaMaximoVisiveis() {
+    const { maxBotoesVisiveis } = estado;
+    let maxEsquerda = (estado.pagina - Math.floor(maxBotoesVisiveis / 2));
+    let maxDireita = (estado.pagina + Math.floor(maxBotoesVisiveis / 2));
+
+    if (maxEsquerda < 1) {
+      maxEsquerda = 1;
+      maxDireita = maxBotoesVisiveis;
+    }
+
+    if (maxDireita > estado.totalPaginas) {
+      maxEsquerda = estado.totalPaginas - (maxBotoesVisiveis - 1);
+      maxDireita = estado.totalPaginas;
+
+      if (maxEsquerda < 1) {
+        maxEsquerda = 1;
+      }
+    }
+
+    return {maxEsquerda, maxDireita};
+  }
+}
