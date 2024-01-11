@@ -42,5 +42,12 @@ const controles = {
     if(ultimaPagina) {
       estado.pagina--;
     }
+  },
+  paginaAnterior() {
+    estado.pagina--;
+
+    if (estado.pagina < 1) {
+      estado.pagina++;
+    }
   }
 }
