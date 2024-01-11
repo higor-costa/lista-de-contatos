@@ -107,6 +107,15 @@ const lista = {
 }
 
 const botoes = {
+  elemento: html.get('.paginas'),
+  atualiza() {
+    botoes.elemento.innerHTML = '';
+    const { maxEsquerda, maxDireita } = botoes.calculaMaximoVisiveis();
+
+    for (let pagina = maxEsquerda; pagina <= maxDireita; pagina++) {
+      botoes.criarBotoes(pagina);
+    }
+  },
   calculaMaximoVisiveis() {
     const { maxBotoesVisiveis } = estado;
     let maxEsquerda = (estado.pagina - Math.floor(maxBotoesVisiveis / 2));
