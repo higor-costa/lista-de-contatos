@@ -27,3 +27,9 @@ const estado = {
   totalPaginas: Math.ceil(dados.length / porPagina),
   maxBotoesVisiveis: 5
 }
+
+const html = {
+  get(elemento) {
+    return document.querySelector(elemento);
+  }
+}
