@@ -202,3 +202,44 @@
     outline: 1px solid $secundaria-Tclaro;
   }
 }
+
+.paginacao, .paginas {
+  @include flex-container;
+  gap: 15px
+}
+
+.paginacao {
+  gap: 15px;
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translateX(-50%);
+
+  div {
+    color: $secundaria-Tclaro;
+    cursor: pointer;
+  }
+
+  &:not(.paginas > div) {
+    font-size: 1.5rem;
+  }
+
+  .paginas {
+    div {
+      font-family: sertif;
+      font-weight: 700;
+      font-size: .9rem;
+      transition: .4s;
+
+      &.ativo {
+        background: $secundaria-Tclaro;
+        color: $primaria-Tclaro;
+        padding: 5px;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 1.4rem;
+        text-align: center;
+      }
+    }
+  }
+}
