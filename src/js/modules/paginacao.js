@@ -49,5 +49,16 @@ const controles = {
     if (estado.pagina < 1) {
       estado.pagina++;
     }
+  },
+  irParaPagina(pagina) {
+    if (pagina < 1) {
+      pagina = 1;
+    }
+
+    estado.pagina = +pagina;
+
+    if (pagina > estado.totalPaginas) {
+      estado.pagina = estado.totalPaginas;
+    }
   }
 }
