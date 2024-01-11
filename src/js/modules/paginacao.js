@@ -154,3 +154,7 @@ const botoes = {
     return {maxEsquerda, maxDireita};
   }
 }
+
+function scrollPosicaoInicial() {
+  html.get('.lista').scrollTop = 0;
+}
