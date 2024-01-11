@@ -108,6 +108,22 @@ const lista = {
 
 const botoes = {
   elemento: html.get('.paginas'),
+  criarBotoes(numero) {
+    const botao = document.createElement('div');
+    botao.innerHTML = numero;
+
+    if (estado.pagina == numero) {
+      botao.classList.add('ativo');
+    }
+
+    botao.addEventListener('click', (event) => {
+      const pagina = event.target.innerHTML;
+
+      controles.irParaPagina(pagina);
+      atualiza();
+    })
+    botoes.elemento.appendChild(botao);
+  },
   atualiza() {
     botoes.elemento.innerHTML = '';
     const { maxEsquerda, maxDireita } = botoes.calculaMaximoVisiveis();
