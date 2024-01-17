@@ -171,3 +171,5 @@ function iniciaFuncoes() {
 }
 
 iniciaFuncoes();
+
+export default html;
