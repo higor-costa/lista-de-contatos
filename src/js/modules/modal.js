@@ -23,3 +23,18 @@ const executaAcao = (acao) => {
   controlaModal.modal(acao);
   controlaModal.formularioContato(acao);
 };
+
+const controles = {
+  executaAcaoDoBotao: ({ target }) => {
+    const textoBotao = target.innerText;
+    executaAcao(textoBotao);
+  },
+  criaEventos() {
+    elementos.botaoAdicionarContato.addEventListener('click', controles.executaAcaoDoBotao);
+    elementos.botaoCancelar.addEventListener('click', (event) => {
+      event.preventDefault();
+      controles.executaAcaoDoBotao(event);
+    });
+    elementos.botaoAdicionar.addEventListener('click', controles.executaAcaoDoBotao);
+  },
+};
