@@ -38,3 +38,9 @@ const controles = {
     elementos.botaoAdicionar.addEventListener('click', controles.executaAcaoDoBotao);
   },
 };
+
+function iniciaFuncoes() {
+  controles.criaEventos();
+}
+
+iniciaFuncoes();
