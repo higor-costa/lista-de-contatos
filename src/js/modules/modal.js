@@ -18,3 +18,8 @@ const controlaModal = {
     elementos.formulario.classList.toggle('ativo', acao === 'Adicionar contato');
   },
 };
+
+const executaAcao = (acao) => {
+  controlaModal.modal(acao);
+  controlaModal.formularioContato(acao);
+};
