@@ -16,7 +16,7 @@
   \*************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_contato_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/contato.js */ \"./src/js/modules/contato.js\");\n/* harmony import */ var _modules_paginacao_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/paginacao.js */ \"./src/js/modules/paginacao.js\");\n\n\n\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_contato_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/contato.js */ \"./src/js/modules/contato.js\");\n/* harmony import */ var _modules_paginacao_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/paginacao.js */ \"./src/js/modules/paginacao.js\");\n/* harmony import */ var _modules_crud_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/crud.js */ \"./src/js/modules/crud.js\");\n\n\n\n\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/index.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n\n\nvar botoesOpcoesContato = document.querySelectorAll('.opcoes-contato');\nvar exibeOpcoesContato = function exibeOpcoesContato(_ref) {\n  var currentTarget = _ref.currentTarget;\n  var iconeOpcoes = currentTarget;\n  var contato = iconeOpcoes.parentNode;\n  var opcoes = document.querySelector('#botoes-opcoes');\n  contato.appendChild(opcoes);\n  opcoes.classList.toggle('ativo');\n};\nbotoesOpcoesContato.forEach(function (botao) {\n  botao.addEventListener('click', exibeOpcoesContato);\n});\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/modules/contato.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/crud.js":
+/*!********************************!*\
+  !*** ./src/js/modules/crud.js ***!
+  \********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/modules/crud.js?");
 
 /***/ }),
 
