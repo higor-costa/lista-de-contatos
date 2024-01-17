@@ -16,7 +16,7 @@
   \*************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_contato_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/contato.js */ \"./src/js/modules/contato.js\");\n/* harmony import */ var _modules_paginacao_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/paginacao.js */ \"./src/js/modules/paginacao.js\");\n/* harmony import */ var _modules_crud_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/crud.js */ \"./src/js/modules/crud.js\");\n\n\n\n\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_contato_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/contato.js */ \"./src/js/modules/contato.js\");\n/* harmony import */ var _modules_paginacao_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/paginacao.js */ \"./src/js/modules/paginacao.js\");\n/* harmony import */ var _modules_crud_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/crud.js */ \"./src/js/modules/crud.js\");\n/* harmony import */ var _modules_modal_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/modal.js */ \"./src/js/modules/modal.js\");\n\n\n\n\n\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/index.js?");
 
 /***/ }),
 
@@ -47,6 +47,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n\n\n//# sourceURL=webpack://l
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n\n\nvar tituloListaGrupos = document.querySelector('#titulo-grupos');\nvar controlaExibicaoGrupos = function controlaExibicaoGrupos() {\n  var grupos = document.querySelector('#lista-grupos');\n  var setaGrupos = document.querySelector('#seta-grupos');\n  grupos.classList.toggle('ativo');\n  setaGrupos.classList.toggle('ativo');\n};\ntituloListaGrupos.addEventListener('click', controlaExibicaoGrupos);\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/modules/menu.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/modal.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/modal.js ***!
+  \*********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _paginacao_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./paginacao.js */ \"./src/js/modules/paginacao.js\");\n\n\n\nvar elementos = {\n  modais: _paginacao_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].get('.modais'),\n  formulario: _paginacao_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].get('form'),\n  botaoAdicionarContato: _paginacao_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].get('.adicionar-contato'),\n  botaoCancelar: _paginacao_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].get('.cancelar'),\n  botaoAdicionar: _paginacao_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].get('.adicionar')\n};\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/modules/modal.js?");
 
 /***/ }),
 
