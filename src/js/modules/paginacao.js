@@ -2,6 +2,8 @@
 
 import eventoArrayModificado from './crud.js';
 
+let dados = [];
+
 let porPagina = 20;
 const estado = {
   pagina: 1,
