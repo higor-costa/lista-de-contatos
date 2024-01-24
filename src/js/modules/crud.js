@@ -36,7 +36,7 @@ function criaObjetoContato({ nome, email, numero, endereco, grupo }) {
 // Eventos
 acoes.adicionar.addEventListener('click', (event) => {
   event.preventDefault();
-  criaObjetoContato(dadosContato);
+  criaObjetoContato(camposFormulario);
 });
 
 export default eventoArrayModificado;
