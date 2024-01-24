@@ -14,3 +14,9 @@ const camposFormulario = {
   endereco: document.querySelector('#endereco'),
   grupo: document.querySelector('#grupo'),
 }
+
+// Eventos
+acoes.adicionar.addEventListener('click', (event) => {
+  event.preventDefault();
+  criaObjetoContato(dadosContato);
+});
