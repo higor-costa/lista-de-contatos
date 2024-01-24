@@ -38,3 +38,5 @@ acoes.adicionar.addEventListener('click', (event) => {
   event.preventDefault();
   criaObjetoContato(dadosContato);
 });
+
+export default eventoArrayModificado;
