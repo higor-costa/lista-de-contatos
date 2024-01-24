@@ -23,6 +23,7 @@ eventoArrayModificado.on('arrayModificado', (arrayAtualizado) => {
               </svg>
            </li>`;
   });
+  iniciaFuncoes();
 });
 
 let porPagina = 20;
