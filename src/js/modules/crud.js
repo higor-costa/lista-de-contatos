@@ -15,6 +15,12 @@ const camposFormulario = {
   grupo: document.querySelector('#grupo'),
 }
 
+// Criar contato
+function adicionarContato(contato) {
+  dados.push(contato);
+  eventoArrayModificado.emit('arrayModificado', dados);
+}
+
 function criaObjetoContato({ nome, email, numero, endereco, grupo }) {
   const contato = {
     nome: nome.value,
