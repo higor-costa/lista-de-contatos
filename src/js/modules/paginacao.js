@@ -23,6 +23,9 @@ eventoArrayModificado.on('arrayModificado', (arrayAtualizado) => {
               </svg>
            </li>`;
   });
+  
+  estado.totalPaginas = Math.ceil(dados.length / porPagina);
+
   iniciaFuncoes();
 });
 
@@ -30,7 +33,7 @@ let porPagina = 20;
 const estado = {
   pagina: 1,
   porPagina,
-  totalPaginas: Math.ceil(dados.length / porPagina),
+  totalPaginas: 0,
   maxBotoesVisiveis: 5
 }
 
@@ -173,9 +176,9 @@ function atualiza() {
 
 function iniciaFuncoes() {
   atualiza();
-  controles.criaEventos();
 }
 
+controles.criaEventos();
 iniciaFuncoes();
 
 export default html;
