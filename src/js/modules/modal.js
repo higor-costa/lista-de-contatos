@@ -8,6 +8,7 @@ const elementos = {
   botaoAdicionarContato: html.get('.adicionar-contato'),
   botaoCancelar: html.get('.cancelar'),
   botaoAdicionar: html.get('.adicionar'),
+  camposFormulario: document.querySelectorAll('.conteiner-input input')
 };
 
 const controlaModal = {
@@ -25,9 +26,15 @@ const executaAcao = (acao) => {
 };
 
 const controles = {
+  limpaCamposForm(acao) {
+    if (acao === 'Adicionar' || acao === 'Cancelar') {
+      elementos.camposFormulario.forEach(campo => campo.value = '');
+    }
+  },
   executaAcaoDoBotao: ({ target }) => {
     const textoBotao = target.innerText;
     executaAcao(textoBotao);
+    controles.limpaCamposForm(textoBotao);    
   },
   criaEventos() {
     elementos.botaoAdicionarContato.addEventListener('click', controles.executaAcaoDoBotao);
