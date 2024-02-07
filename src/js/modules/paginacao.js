@@ -97,9 +97,9 @@ const controles = {
 
 const lista = {
   criaItem(item) {
-    const div = document.createElement('div');
-    div.classList.add('item');
-    div.innerHTML = item;
+    const contato = document.createElement('li');
+    contato.classList.add('contato');
+    contato.innerHTML = item;
 
     html.get('.lista').appendChild(div);
   },
