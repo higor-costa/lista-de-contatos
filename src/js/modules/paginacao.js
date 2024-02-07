@@ -184,7 +184,8 @@ function scrollPosicaoInicial() {
 function atualiza() {
   lista.atualiza();
   botoes.atualiza();
-  scrollPosicaoInicial()
+  scrollPosicaoInicial();
+  iniciaModuloContato()
 } 
 
 function iniciaFuncoes() {
