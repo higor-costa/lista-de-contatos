@@ -101,7 +101,7 @@ const lista = {
     contato.classList.add('contato');
     contato.innerHTML = item;
 
-    html.get('.lista').appendChild(div);
+    html.get('.lista').appendChild(contato);
   },
   atualiza() {
     html.get('.lista').innerHTML = '';
