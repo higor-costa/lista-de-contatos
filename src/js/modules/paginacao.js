@@ -7,22 +7,17 @@ let dados = [];
 
 eventoArrayModificado.on('arrayModificado', (arrayAtualizado) => {
   dados = arrayAtualizado.map(contato => {
-    return `<li class="contato">
-              <input type="checkbox" name="checkbox" id="checkbox">
-              <div class="info-basicas">
-                <img src="src/images/foto-perfil.jpg" alt="">
-                <p>${contato.nome}</p>
-              </div>
-              <p>${contato.email}</p>
-              <p>${contato.numero}</p>
-              <p>${contato.endereco}</p>
-              <p>${contato.grupo}</p>
-              <svg class="opcoes-contato" width="20" height="7" viewBox="0 0 29 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="3.625" cy="3.49398" rx="3.625" ry="3.49398" fill="#1A1A1A"/>
-                <ellipse cx="14.5" cy="3.49398" rx="3.625" ry="3.49398" fill="#1A1A1A"/>
-                <ellipse cx="25.375" cy="3.49398" rx="3.625" ry="3.49398" fill="#1A1A1A"/>
-              </svg>
-           </li>`;
+    return `<input type="checkbox" name="checkbox" id="checkbox">
+            <div class="info-basicas">
+              <img src="src/images/foto-perfil.jpg" alt="">
+              <p>${contato.nome}</p>
+            </div>
+            <p>${contato.email}</p>
+            <p>${contato.numero}</p>
+            <p>${contato.endereco}</p>
+            <p>${contato.grupo}</p>
+            <i class="bi bi-three-dots opcoes-contato"></i>
+          `;
   });
   
   estado.totalPaginas = Math.ceil(dados.length / porPagina);
