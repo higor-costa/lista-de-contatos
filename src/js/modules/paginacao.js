@@ -1,6 +1,7 @@
 'use strict';
 
 import eventoArrayModificado from './crud.js';
+import iniciaModuloContato from './contato.js';
 
 let dados = [];
 
