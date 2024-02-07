@@ -104,6 +104,18 @@ const lista = {
   },
   atualiza() {
     html.get('.lista').innerHTML = '';
+    html.get('.lista').innerHTML =
+    ` <div class="botoes-opcoes" id="botoes-opcoes">
+        <button class="editar">
+          <i class="bi bi-pencil"></i>
+          Editar
+        </button>
+        <button class="excluir">
+          <i class="bi bi-trash"></i>
+          Excluir
+        </button>
+      </div>
+    `;
 
     let pagina = estado.pagina - 1;
     let inicio = pagina * porPagina;
