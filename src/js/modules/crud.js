@@ -33,6 +33,7 @@ const armazenamento = {
 function adicionarContato(contato) {
   dados.push(contato);
   eventoArrayModificado.emit('arrayModificado', dados);
+  armazenamento.enviarDados(dados);
 }
 
 function criaObjetoContato({ nome, email, numero, endereco, grupo }) {
