@@ -15,6 +15,11 @@ const camposFormulario = {
   grupo: document.querySelector('#grupo'),
 }
 
+function inicializaDados() {
+  dados = armazenamento.puxarDados() ?? [] ;
+  eventoArrayModificado.emit('arrayModificado', dados);
+}
+
 // Armazenamento
 const armazenamento = {
   enviarDados: (dados => localStorage.setItem('Contatos', JSON.stringify(dados))),
