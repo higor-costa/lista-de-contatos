@@ -6,7 +6,7 @@ const eventoArrayModificado = new EventEmitter();
 const acoes = {
   adicionar: document.querySelector('.adicionar'),
 }
-const dados = [];
+let dados;
 const camposFormulario = {
   nome: document.querySelector('#nome'),
   numero: document.querySelector('#numero'),
