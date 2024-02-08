@@ -15,6 +15,15 @@ const camposFormulario = {
   grupo: document.querySelector('#grupo'),
 }
 
+// Armazenamento
+const armazenamento = {
+  enviarDados: (dados => localStorage.setItem('Contatos', JSON.stringify(dados))),
+  puxarDados() {
+    const contatosArray =  JSON.parse(localStorage.getItem('Contatos'));
+    return contatosArray;
+  }
+}
+
 // Criar contato
 function adicionarContato(contato) {
   dados.push(contato);
