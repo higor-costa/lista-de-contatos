@@ -26,6 +26,7 @@ const controlaModal = {
 };
 
 const executaAcao = (acao) => {
+  controlaModal.exibeBtnAdicionarOuAtualizar(acao);
   controlaModal.modal(acao);
   controlaModal.formularioContato(acao);
 };
