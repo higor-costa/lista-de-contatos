@@ -57,4 +57,4 @@ acoes.adicionar.addEventListener('click', (event) => {
 
 window.addEventListener('load', inicializaDados);
 
-export default eventoArrayModificado;
+export {eventoArrayModificado, preencheFormulario };
