@@ -92,7 +92,7 @@ const controles = {
 }
 
 const lista = {
-  criaItem(item) {
+  criaItem(item, index) {
     const contato = document.createElement('li');
     contato.classList.add('contato');
     contato.innerHTML = item;
