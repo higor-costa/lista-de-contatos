@@ -37,7 +37,7 @@ function adicionarContato(contato) {
   armazenamento.enviarDados(dados);
 }
 
-function criaObjetoContato({ nome, email, numero, endereco, grupo }) {
+function criaObjetoContato({ nome, email, numero, endereco, grupo }, target) {
   const contato = {
     nome: nome.value,
     email: email.value,
