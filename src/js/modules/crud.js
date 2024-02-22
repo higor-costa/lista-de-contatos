@@ -55,6 +55,17 @@ function criaObjetoContato({ nome, email, numero, endereco, grupo }, target) {
   adicionarContato(contato);
 }
 
+// Atualizar contato
+let indexContato;
+function preencheFormulario(contato) {
+  indexContato = contato.dataIndex;
+  camposFormulario.nome.value = dados[indexContato].nome;
+  camposFormulario.numero.value = dados[indexContato].numero;
+  camposFormulario.email.value = dados[indexContato].email;
+  camposFormulario.endereco.value = dados[indexContato].endereco;
+  camposFormulario.grupo.value = dados[indexContato].grupo;
+}
+
 // Eventos
 acoes.adicionar.addEventListener('click', (event) => {
   event.preventDefault();
