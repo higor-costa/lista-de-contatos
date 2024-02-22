@@ -96,6 +96,7 @@ const lista = {
     const contato = document.createElement('li');
     contato.classList.add('contato');
     contato.innerHTML = item;
+    contato.dataIndex = index;
 
     html.get('.lista').appendChild(contato);
   },
