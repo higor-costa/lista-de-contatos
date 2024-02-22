@@ -33,8 +33,10 @@ const executaAcao = (acao) => {
 
 const controles = {
   limpaCamposForm(acao) {
-    if (acao === 'Adicionar' || acao === 'Cancelar') {
-      elementos.camposFormulario.forEach(campo => campo.value = '');
+    const acoesQueExigemLimpeza = ['Adicionar', 'Cancelar', 'Atualizar'];
+
+    if (acoesQueExigemLimpeza.includes(acao)) {
+        elementos.camposFormulario.forEach(campo => campo.value = '');
     }
   },
   executaAcaoDoBotao: ({ target }) => {
