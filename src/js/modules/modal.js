@@ -60,3 +60,5 @@ function iniciaFuncoes() {
 }
 
 iniciaFuncoes();
+
+export default executaAcao;
