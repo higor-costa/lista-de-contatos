@@ -148,7 +148,17 @@ form.ativo {
       cursor: pointer;
     }
 
+    #editar {
+      display: none;
+    }
+
     .adicionar {
+      display: none;
+    }
+
+    .adicionar.ativo, 
+    #editar.ativo {
+      display: initial;
       background: $azul-fundo-Tclaro;
       margin-right: 15px;
     }
