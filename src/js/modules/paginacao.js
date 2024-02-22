@@ -114,6 +114,12 @@ const lista = {
         </button>
       </div>
     `;
+    const btnEditar = html.get('.editar');
+    btnEditar.addEventListener('click', ({currentTarget}) => {
+      const contato = currentTarget.parentNode.parentNode;
+      preencheFormulario(contato);
+      executaAcao("Editar");
+    });
 
     let pagina = estado.pagina - 1;
     let inicio = pagina * porPagina;
