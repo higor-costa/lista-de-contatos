@@ -45,7 +45,7 @@ function criaObjetoContato({ nome, email, numero, endereco, grupo }, target) {
     endereco: endereco.value,
     grupo: grupo.value,
   }
-
+  
   const textoBotao = target.innerText;
   if (textoBotao === 'Atualizar') {
     atualizarContato(contato);
