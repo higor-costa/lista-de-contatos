@@ -52,7 +52,7 @@ function criaObjetoContato({ nome, email, numero, endereco, grupo }, target) {
 // Eventos
 acoes.adicionar.addEventListener('click', (event) => {
   event.preventDefault();
-  criaObjetoContato(camposFormulario);
+  criaObjetoContato(camposFormulario, event.target);
 });
 
 window.addEventListener('load', inicializaDados);
