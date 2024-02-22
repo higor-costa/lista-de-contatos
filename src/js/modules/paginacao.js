@@ -120,8 +120,9 @@ const lista = {
     let fim = inicio + porPagina;
 
     const itensPaginados = dados.slice(inicio, fim); 
-
-    itensPaginados.forEach(lista.criaItem);
+    itensPaginados.forEach((item, index) => {
+      lista.criaItem(item, index);
+    });
   }
 }
 
