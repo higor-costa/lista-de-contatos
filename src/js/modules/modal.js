@@ -8,6 +8,7 @@ const elementos = {
   botaoAdicionarContato: html.get('.adicionar-contato'),
   botaoCancelar: html.get('.cancelar'),
   botaoAdicionar: html.get('.adicionar'),
+  botaoAtualizar: html.get('#editar'),
   camposFormulario: document.querySelectorAll('.conteiner-input input')
 };
 
