@@ -66,6 +66,12 @@ function preencheFormulario(contato) {
   camposFormulario.grupo.value = dados[indexContato].grupo;
 }
 
+function atualizarContato(contato) {
+  dados[indexContato] = contato;
+  eventoArrayModificado.emit('arrayModificado', dados);
+  armazenamento.enviarDados(dados);
+}
+
 // Eventos
 acoes.adicionar.addEventListener('click', (event) => {
   event.preventDefault();
