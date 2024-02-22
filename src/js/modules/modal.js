@@ -14,10 +14,10 @@ const elementos = {
 
 const controlaModal = {
   modal(acao) {
-    elementos.modais.classList.toggle('ativo', acao === 'Adicionar contato');
+    elementos.modais.classList.toggle('ativo', acao === 'Adicionar contato' || acao === 'Editar');
   },
   formularioContato(acao) {
-    elementos.formulario.classList.toggle('ativo', acao === 'Adicionar contato');
+    elementos.formulario.classList.toggle('ativo', acao === 'Adicionar contato' || acao === 'Editar');
   },
   exibeBtnAdicionarOuAtualizar(acao) {
     elementos.botaoAtualizar.classList.toggle('ativo', acao === 'Editar');
