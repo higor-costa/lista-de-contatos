@@ -55,6 +55,11 @@ acoes.adicionar.addEventListener('click', (event) => {
   criaObjetoContato(camposFormulario, event.target);
 });
 
+acoes.atualizar.addEventListener('click', (event) => {
+  event.preventDefault();
+  criaObjetoContato(camposFormulario, event.target);
+});
+
 window.addEventListener('load', inicializaDados);
 
 export {eventoArrayModificado, preencheFormulario };
