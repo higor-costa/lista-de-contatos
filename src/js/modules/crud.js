@@ -73,6 +73,13 @@ function atualizarContato(contato) {
   armazenamento.enviarDados(dados);
 }
 
+// Deletar contato
+function deletaContato(indexContato) {
+  dados.splice(indexContato, 1);
+  eventoArrayModificado.emit('arrayModificado', dados);
+  armazenamento.enviarDados(dados);
+}
+
 // Eventos
 acoes.adicionar.addEventListener('click', (event) => {
   event.preventDefault();
