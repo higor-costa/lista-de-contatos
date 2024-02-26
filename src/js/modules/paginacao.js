@@ -1,6 +1,6 @@
 'use strict';
 
-import { eventoArrayModificado, preencheFormulario } from './crud.js';
+import { eventoArrayModificado, preencheFormulario, deletaContato } from './crud.js';
 import executaAcao from './modal.js';
 import iniciaModuloContato from './contato.js';
 
