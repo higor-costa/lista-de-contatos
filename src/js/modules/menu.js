@@ -12,4 +12,9 @@ const controlaExibicaoGrupos = () => {
   setaGrupos.classList.toggle('ativo');
 }
 
+function menu() {
+  const titulo = this.innerText;
+  tituloPrincipal.innerText = titulo;
+}
+
 tituloListaGrupos.addEventListener('click', controlaExibicaoGrupos);
