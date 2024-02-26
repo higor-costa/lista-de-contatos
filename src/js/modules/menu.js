@@ -17,4 +17,8 @@ function menu() {
   tituloPrincipal.innerText = titulo;
 }
 
+itensMenu.forEach(item => {
+  item.addEventListener('click', menu);
+});
+
 tituloListaGrupos.addEventListener('click', controlaExibicaoGrupos);
