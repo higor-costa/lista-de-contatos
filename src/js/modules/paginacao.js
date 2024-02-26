@@ -120,6 +120,12 @@ const lista = {
       preencheFormulario(contato);
       executaAcao("Editar");
     });
+    const btnDeletar = html.get('.excluir');
+    btnDeletar.addEventListener('click', ({ currentTarget }) => {
+      const contato = currentTarget.parentNode.parentNode;
+      const indexContato = contato.dataIndex;
+      deletaContato(indexContato);
+    });
 
     let pagina = estado.pagina - 1;
     let inicio = pagina * porPagina;
