@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n\n\nvar tituloListaGrupos = document.querySelector('#titulo-grupos');\nvar controlaExibicaoGrupos = function controlaExibicaoGrupos() {\n  var grupos = document.querySelector('#lista-grupos');\n  var setaGrupos = document.querySelector('#seta-grupos');\n  grupos.classList.toggle('ativo');\n  setaGrupos.classList.toggle('ativo');\n};\ntituloListaGrupos.addEventListener('click', controlaExibicaoGrupos);\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/modules/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n\n\nvar tituloListaGrupos = document.querySelector('#titulo-grupos');\nvar itensMenu = document.querySelectorAll('.item-titulo');\nvar tituloPrincipal = document.querySelector('#titulo-principal');\nvar controlaExibicaoGrupos = function controlaExibicaoGrupos() {\n  var grupos = document.querySelector('#lista-grupos');\n  var setaGrupos = document.querySelector('#seta-grupos');\n  grupos.classList.toggle('ativo');\n  setaGrupos.classList.toggle('ativo');\n};\nfunction menu() {\n  var titulo = this.innerText;\n  tituloPrincipal.innerText = titulo;\n}\nitensMenu.forEach(function (item) {\n  item.addEventListener('click', menu);\n});\ntituloListaGrupos.addEventListener('click', controlaExibicaoGrupos);\n\n//# sourceURL=webpack://lista-de-contatos/./src/js/modules/menu.js?");
 
 /***/ }),
 
