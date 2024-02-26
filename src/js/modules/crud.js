@@ -93,4 +93,4 @@ acoes.atualizar.addEventListener('click', (event) => {
 
 window.addEventListener('load', inicializaDados);
 
-export {eventoArrayModificado, preencheFormulario };
+export { eventoArrayModificado, preencheFormulario, deletaContato };
