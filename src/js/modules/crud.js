@@ -6,6 +6,7 @@ const eventoArrayModificado = new EventEmitter();
 const acoes = {
   adicionar: document.querySelector('.adicionar'),
   atualizar: document.querySelector('#editar'),
+  deletar: document.querySelector('.confirmar'),
 }
 let dados;
 const camposFormulario = {
