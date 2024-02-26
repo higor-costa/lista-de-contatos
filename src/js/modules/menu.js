@@ -2,6 +2,7 @@
 
 const tituloListaGrupos = document.querySelector('#titulo-grupos');
 const itensMenu = document.querySelectorAll('.item-titulo');
+const tituloPrincipal = document.querySelector('#titulo-principal');
 
 const controlaExibicaoGrupos = () => {
   const grupos = document.querySelector('#lista-grupos');
