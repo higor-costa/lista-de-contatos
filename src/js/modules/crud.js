@@ -93,6 +93,8 @@ acoes.atualizar.addEventListener('click', (event) => {
   criaObjetoContato(camposFormulario, event.target);
 });
 
+acoes.btnContatosMenu.addEventListener('click', inicializaDados);
+
 window.addEventListener('load', inicializaDados);
 
 export { eventoArrayModificado, preencheFormulario, deletaContato };
