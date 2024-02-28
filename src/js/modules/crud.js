@@ -78,6 +78,10 @@ function atualizarContato(contato) {
 // Deletar contato
 const contatosExcluidos = [];
 function deletaContato(indexContato) {
+  // Atualiza a lixeira
+  contatosExcluidos.push(dados[indexContato]);
+  contatosExcluidosModificado.emit('excluidosModificados', contatosExcluidos);
+
   dados.splice(indexContato, 1);
   eventoArrayModificado.emit('arrayModificado', dados);
   armazenamento.enviarDados(dados);
