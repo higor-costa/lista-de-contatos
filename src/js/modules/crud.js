@@ -8,6 +8,7 @@ const acoes = {
   adicionar: document.querySelector('.adicionar'),
   atualizar: document.querySelector('#editar'),
   deletar: document.querySelector('.confirmar'),
+  btnContatosMenu: document.querySelector('#contatos'),
 }
 let dados;
 const camposFormulario = {
