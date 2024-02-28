@@ -102,4 +102,9 @@ acoes.btnContatosMenu.addEventListener('click', inicializaDados);
 
 window.addEventListener('load', inicializaDados);
 
-export { eventoArrayModificado, preencheFormulario, deletaContato };
+export {
+  eventoArrayModificado,
+  preencheFormulario,
+  deletaContato,
+  contatosExcluidosModificado,
+};
