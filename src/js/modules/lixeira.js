@@ -19,3 +19,4 @@ function exibeContatosExcluidos() {
 
 // Eventos
 menuLixeira.addEventListener('click', exibeContatosExcluidos);
+window.addEventListener('load', inicializaLixeira);
