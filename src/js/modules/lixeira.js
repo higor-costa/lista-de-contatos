@@ -20,7 +20,8 @@ const inicializaLixeira = () => {
 }
 
 contatosExcluidosModificado.on('excluidosModificados', (contatosExcluidos) => {
-  arrayAtualizado = contatosExcluidos;
+  armazenamentoLixeira.enviaDados(contatosExcluidos);
+  arrayAtualizado = armazenamentoLixeira.puxaDados();
 });
 
 function exibeContatosExcluidos() {
