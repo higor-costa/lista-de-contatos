@@ -5,7 +5,10 @@ import { contatosExcluidosModificado, eventoArrayModificado } from './crud.js';
 const menuLixeira = document.querySelector('#lixeira');
 let arrayAtualizado;
 
-let arrayAtualizado = [];
+const inicializaLixeira = () => {
+  arrayAtualizado = armazenamentoLixeira.puxaDados() ?? [];
+}
+
 contatosExcluidosModificado.on('excluidosModificados', (contatosExcluidos) => {
   arrayAtualizado = contatosExcluidos;
 });
