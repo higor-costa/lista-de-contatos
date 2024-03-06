@@ -27,8 +27,8 @@ function inicializaDados() {
 // Armazenamento
 const armazenamento = {
   enviarDados: (dados => localStorage.setItem('Contatos', JSON.stringify(dados))),
-  puxarDados() {
-    const contatosArray =  JSON.parse(localStorage.getItem('Contatos'));
+  puxarDados(chave) {
+    const contatosArray =  JSON.parse(localStorage.getItem(chave));
     return contatosArray;
   }
 }
