@@ -11,6 +11,8 @@ const acoes = {
   btnContatosMenu: document.querySelector('#contatos'),
 }
 let dados;
+let contatosExcluidos;
+
 const camposFormulario = {
   nome: document.querySelector('#nome'),
   numero: document.querySelector('#numero'),
@@ -20,7 +22,8 @@ const camposFormulario = {
 }
 
 function inicializaDados() {
-  dados = armazenamento.puxarDados() ?? [] ;
+  dados = armazenamento.puxarDados("Contatos") ?? [] ;
+  contatosExcluidos = armazenamento.puxarDados('Lixeira') ?? [];
   eventoArrayModificado.emit('arrayModificado', dados);
 }
 
@@ -76,7 +79,6 @@ function atualizarContato(contato) {
 }
 
 // Deletar contato
-const contatosExcluidos = [];
 function deletaContato(indexContato) {
   // Atualiza a lixeira
   contatosExcluidos.push(dados[indexContato]);
