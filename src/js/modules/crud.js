@@ -93,6 +93,11 @@ function excluiContatoPermanentemente() {
 }
 
 function deletaContato(indexContato) {
+  if (verificaTituloAba() === 'Lixeira') {
+    executaAcao('Excluir permanentemente'); // Abre modal
+    index = indexContato;
+    return;
+  }
   // Atualiza a lixeira
   contatosExcluidos.push(dados[indexContato]);
   contatosExcluidosModificado.emit('excluidosModificados', contatosExcluidos);
