@@ -63,6 +63,7 @@ const controles = {
     });
     elementos.botaoAdicionar.addEventListener('click', controles.executaAcaoDoBotao);
     elementos.botaoAtualizar.addEventListener('click', controles.executaAcaoDoBotao);
+    elementos.botaoNao.addEventListener('click', controles.executaAcaoDoBotao);
   },
 };
 
