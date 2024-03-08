@@ -29,6 +29,9 @@ const controlaModal = {
   exibeBtnAdicionarOuAtualizar(acao) {
     elementos.botaoAtualizar.classList.toggle('ativo', acao === 'Editar');
     elementos.botaoAdicionar.classList.toggle('ativo', acao !== 'Editar');
+  },
+  formExclusaoPermanente(acao) {
+    elementos.formExclusaoPermanente.classList.toggle('ativo', acao === 'Excluir permanentemente');
   }
 };
 
