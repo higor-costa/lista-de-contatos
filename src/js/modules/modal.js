@@ -16,7 +16,12 @@ const elementos = {
 
 const controlaModal = {
   modal(acao) {
-    elementos.modais.classList.toggle('ativo', acao === 'Adicionar contato' || acao === 'Editar');
+    elementos.modais.classList.toggle(
+      'ativo',
+      acao === 'Adicionar contato' ||
+      acao === 'Editar' ||
+      acao === 'Excluir permanentemente'
+    );
   },
   formularioContato(acao) {
     elementos.formulario.classList.toggle('ativo', acao === 'Adicionar contato' || acao === 'Editar');
