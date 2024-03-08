@@ -85,6 +85,13 @@ function verificaTituloAba() {
   return tituloAba;
 }
 
+let index;
+function excluiContatoPermanentemente() {
+  contatosExcluidos.splice(index, 1);
+  contatosExcluidosModificado.emit('excluidosModificados', contatosExcluidos);
+  executaAcao('Fecha modal');
+}
+
 function deletaContato(indexContato) {
   // Atualiza a lixeira
   contatosExcluidos.push(dados[indexContato]);
