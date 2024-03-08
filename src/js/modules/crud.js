@@ -103,6 +103,8 @@ acoes.atualizar.addEventListener('click', (event) => {
 
 acoes.btnContatosMenu.addEventListener('click', inicializaDados);
 
+acoes.deletar.addEventListener('click', excluiContatoPermanentemente)
+
 window.addEventListener('load', inicializaDados);
 
 export {
