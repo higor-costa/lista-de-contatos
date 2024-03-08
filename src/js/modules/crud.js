@@ -80,6 +80,11 @@ function atualizarContato(contato) {
 }
 
 // Deletar contato
+function verificaTituloAba() {
+  const tituloAba = document.querySelector('#titulo-principal').innerText;
+  return tituloAba;
+}
+
 function deletaContato(indexContato) {
   // Atualiza a lixeira
   contatosExcluidos.push(dados[indexContato]);
