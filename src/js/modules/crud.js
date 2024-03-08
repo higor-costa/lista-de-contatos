@@ -1,6 +1,7 @@
 'use strict';
 
 import { EventEmitter } from 'events';
+import executaAcao from './modal.js';
 
 const eventoArrayModificado = new EventEmitter();
 const contatosExcluidosModificado = new EventEmitter();
