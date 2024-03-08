@@ -9,7 +9,9 @@ const elementos = {
   botaoCancelar: html.get('.cancelar'),
   botaoAdicionar: html.get('.adicionar'),
   botaoAtualizar: html.get('#editar'),
-  camposFormulario: document.querySelectorAll('.conteiner-input input')
+  camposFormulario: document.querySelectorAll('.conteiner-input input'),
+  formExclusaoPermanente: html.get('.exclusao-permanente'),
+  botaoNao: html.get('.negar')
 };
 
 const controlaModal = {
